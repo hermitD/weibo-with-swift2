@@ -4,7 +4,7 @@
 //
 //  Created by Doye on 15/12/7.
 //  Copyright © 2015年 d0ye. All rights reserved.
-//
+//  without Custem Tabbar Version
 
 import UIKit
 
@@ -23,16 +23,15 @@ class MainViewController: UITabBarController {
     }
     
     /**
-        add a blank vc so not don't need to calculate the frame
+        add a blank vc so not don't need to calculate the frame for others :)
     */
     private func addChildViewControllers() {
-        addChildViewController(HomeTableViewController(), title: "Home", iconName: "tabbar_home")
-        addChildViewController(MessageTableViewController(), title: "Message", iconName: "tabbar_message_center")
+        addChildViewController(HomeTableViewController(), title: "Home", image: "tabbar_home", selectedImage:"tabbar_home_highlight")
+        addChildViewController(MessageTableViewController(), title: "Message", image: "tabbar_message_center", selectedImage:"tabbar_message_center_highlight")
         addChildViewController(UIViewController())
-        //addChildViewController(DiscoverTableViewController(), title: "Discover", iconName: "tabbar_discover")
         
-        addChildViewController(DiscoverTableViewController(), title: "Discover", iconName: "tabbar_discover")
-        addChildViewController(ProfileTableViewController(), title: "Profile", iconName: "tabbar_profile")
+        addChildViewController(DiscoverTableViewController(), title: "Discover", image: "tabbar_discover", selectedImage:"tabbar_discover_highlight")
+        addChildViewController(ProfileTableViewController(), title: "Profile", image: "tabbar_profile", selectedImage:"tabbar_profile_highlight")
     }
     /**
     Description
@@ -41,13 +40,17 @@ class MainViewController: UITabBarController {
     - parameter title:    title string
     - parameter iconName: iconName stirng
     */
-    
-    private func addChildViewController(vc: UIViewController, title: String, iconName: String) {
+    //FIXED: selcetedImage make no sense? defalut be blue
+    // set UITabBar.appearance().tintColor = UIColor.orangeColor() in AppDelegate
+    private func addChildViewController(vc: UIViewController, title: String, image: String, selectedImage: String) {
         vc.title = title
-        vc.tabBarItem.image = UIImage(named: iconName)
+        vc.tabBarItem.image = UIImage(named: image)
+        vc.tabBarItem.selectedImage = UIImage(named: selectedImage)
+        vc.tabBarItem.badgeValue = "😄"
+        
+        
         
         let navVC = UINavigationController(rootViewController: vc)
-        
         self.addChildViewController(navVC)
     }
     

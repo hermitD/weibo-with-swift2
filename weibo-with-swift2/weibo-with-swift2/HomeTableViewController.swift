@@ -8,11 +8,17 @@
 
 import UIKit
 
-class HomeTableViewController: UITableViewController {
+class HomeTableViewController: DYBaseTableVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.redColor()
+        
+        if let visterView = visitorView {
+            visterView.setupInfo(nil, title: "hello")
+        }
+        //startAnim()
+        
+        //self.view.backgroundColor = UIColor.redColor()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

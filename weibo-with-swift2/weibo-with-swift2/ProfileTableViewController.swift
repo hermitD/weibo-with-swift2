@@ -8,11 +8,11 @@
 
 import UIKit
 
-class ProfileTableViewController: UITableViewController {
+class ProfileTableViewController: DYBaseTableVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.blueColor()
+        //self.view.backgroundColor = UIColor.blueColor()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

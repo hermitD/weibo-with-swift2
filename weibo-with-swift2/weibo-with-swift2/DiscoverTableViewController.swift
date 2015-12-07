@@ -8,11 +8,11 @@
 
 import UIKit
 
-class DiscoverTableViewController: UITableViewController {
+class DiscoverTableViewController: DYBaseTableVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.greenColor()
+        //self.view.backgroundColor = UIColor.greenColor()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

@@ -8,11 +8,11 @@
 
 import UIKit
 
-class MessageTableViewController: UITableViewController {
+class MessageTableViewController: DYBaseTableVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.yellowColor()
+        //self.view.backgroundColor = UIColor.yellowColor()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

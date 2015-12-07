@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B571BD9E305DE7B3C617C19 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 163564A8D0D2CFB122574890 /* Pods.framework */; };
+		A00F57BF1C15B21D0098047B /* DYBaseTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00F57BE1C15B21D0098047B /* DYBaseTableVC.swift */; settings = {ASSET_TAGS = (); }; };
+		A00F57C11C15B5510098047B /* DYVisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00F57C01C15B5510098047B /* DYVisitorView.swift */; settings = {ASSET_TAGS = (); }; };
+		A046AC3D1C15D626009BAF34 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A046AC3C1C15D626009BAF34 /* UIImage+Extension.swift */; settings = {ASSET_TAGS = (); }; };
+		A046AC3F1C15D670009BAF34 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A046AC3E1C15D670009BAF34 /* UIButton+Extension.swift */; settings = {ASSET_TAGS = (); }; };
+		A046AC411C15D6A8009BAF34 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A046AC401C15D6A8009BAF34 /* UILabel+Extension.swift */; settings = {ASSET_TAGS = (); }; };
+		A046AC431C15D6CA009BAF34 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A046AC421C15D6CA009BAF34 /* UIBarButtonItem+Extension.swift */; settings = {ASSET_TAGS = (); }; };
+		A05C63261C15A16200CE58B3 /* DYTabar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05C63251C15A16200CE58B3 /* DYTabar.swift */; settings = {ASSET_TAGS = (); }; };
+		A05C63281C15A6AD00CE58B3 /* DYMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05C63271C15A6AD00CE58B3 /* DYMainViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		A09B02201C156EDD00B80CBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09B021F1C156EDD00B80CBE /* AppDelegate.swift */; };
 		A09B02221C156EDD00B80CBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09B02211C156EDD00B80CBE /* ViewController.swift */; };
 		A09B02251C156EDD00B80CBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A09B02231C156EDD00B80CBE /* Main.storyboard */; };
@@ -20,6 +29,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		163564A8D0D2CFB122574890 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00F57BE1C15B21D0098047B /* DYBaseTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYBaseTableVC.swift; sourceTree = "<group>"; };
+		A00F57C01C15B5510098047B /* DYVisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYVisitorView.swift; sourceTree = "<group>"; };
+		A046AC3C1C15D626009BAF34 /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		A046AC3E1C15D670009BAF34 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		A046AC401C15D6A8009BAF34 /* UILabel+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		A046AC421C15D6CA009BAF34 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
+		A05C63251C15A16200CE58B3 /* DYTabar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYTabar.swift; sourceTree = "<group>"; };
+		A05C63271C15A6AD00CE58B3 /* DYMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYMainViewController.swift; sourceTree = "<group>"; };
 		A09B021C1C156EDD00B80CBE /* weibo-with-swift2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "weibo-with-swift2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A09B021F1C156EDD00B80CBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A09B02211C156EDD00B80CBE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -32,6 +50,8 @@
 		A09B02421C15768900B80CBE /* MessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewController.swift; sourceTree = "<group>"; };
 		A09B02441C15769300B80CBE /* DiscoverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewController.swift; sourceTree = "<group>"; };
 		A09B02461C15769C00B80CBE /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		CD345E6AB1B31379CB719080 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		D0503E5F0019A317529ECDA6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +59,48 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B571BD9E305DE7B3C617C19 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		619B04B23BF1CD143E8359D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD345E6AB1B31379CB719080 /* Pods.debug.xcconfig */,
+				D0503E5F0019A317529ECDA6 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A046AC3A1C15D59A009BAF34 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				A046AC3B1C15D5BE009BAF34 /* Extension */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		A046AC3B1C15D5BE009BAF34 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A046AC3C1C15D626009BAF34 /* UIImage+Extension.swift */,
+				A046AC3E1C15D670009BAF34 /* UIButton+Extension.swift */,
+				A046AC401C15D6A8009BAF34 /* UILabel+Extension.swift */,
+				A046AC421C15D6CA009BAF34 /* UIBarButtonItem+Extension.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
 		A09B02131C156EDD00B80CBE = {
 			isa = PBXGroup;
 			children = (
 				A09B021E1C156EDD00B80CBE /* weibo-with-swift2 */,
 				A09B021D1C156EDD00B80CBE /* Products */,
+				619B04B23BF1CD143E8359D3 /* Pods */,
+				E7E78592D8C48FC18B76CF6F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +127,7 @@
 		A09B02311C156F7900B80CBE /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A046AC3A1C15D59A009BAF34 /* Tools */,
 				A09B02321C156F8C00B80CBE /* ViewControlers */,
 				A09B02331C156F9300B80CBE /* Model */,
 			);
@@ -114,6 +166,10 @@
 		A09B02351C15704200B80CBE /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				A09B02481C1588FF00B80CBE /* Views */,
+				A05C63271C15A6AD00CE58B3 /* DYMainViewController.swift */,
+				A00F57BE1C15B21D0098047B /* DYBaseTableVC.swift */,
+				A00F57C01C15B5510098047B /* DYVisitorView.swift */,
 				A09B02381C15711500B80CBE /* MainViewController.swift */,
 			);
 			name = Main;
@@ -151,6 +207,22 @@
 			name = Profile;
 			sourceTree = "<group>";
 		};
+		A09B02481C1588FF00B80CBE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A05C63251C15A16200CE58B3 /* DYTabar.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		E7E78592D8C48FC18B76CF6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				163564A8D0D2CFB122574890 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -158,9 +230,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A09B022E1C156EDD00B80CBE /* Build configuration list for PBXNativeTarget "weibo-with-swift2" */;
 			buildPhases = (
+				B5CCC0849B4A2727836F6E1A /* Check Pods Manifest.lock */,
 				A09B02181C156EDD00B80CBE /* Sources */,
 				A09B02191C156EDD00B80CBE /* Frameworks */,
 				A09B021A1C156EDD00B80CBE /* Resources */,
+				2D9879FBE367748E3F2BD6A1 /* Embed Pods Frameworks */,
+				24BA3EC9600D448662D590A9 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -177,6 +252,7 @@
 		A09B02141C156EDD00B80CBE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = DY;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = d0ye;
 				TargetAttributes = {
@@ -217,6 +293,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		24BA3EC9600D448662D590A9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D9879FBE367748E3F2BD6A1 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5CCC0849B4A2727836F6E1A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A09B02181C156EDD00B80CBE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -224,11 +348,19 @@
 			files = (
 				A09B02471C15769C00B80CBE /* ProfileTableViewController.swift in Sources */,
 				A09B02411C15761100B80CBE /* HomeTableViewController.swift in Sources */,
+				A046AC3F1C15D670009BAF34 /* UIButton+Extension.swift in Sources */,
+				A05C63281C15A6AD00CE58B3 /* DYMainViewController.swift in Sources */,
+				A046AC3D1C15D626009BAF34 /* UIImage+Extension.swift in Sources */,
+				A00F57BF1C15B21D0098047B /* DYBaseTableVC.swift in Sources */,
 				A09B02391C15711500B80CBE /* MainViewController.swift in Sources */,
+				A046AC431C15D6CA009BAF34 /* UIBarButtonItem+Extension.swift in Sources */,
 				A09B02431C15768900B80CBE /* MessageTableViewController.swift in Sources */,
 				A09B02221C156EDD00B80CBE /* ViewController.swift in Sources */,
 				A09B02451C15769300B80CBE /* DiscoverTableViewController.swift in Sources */,
+				A046AC411C15D6A8009BAF34 /* UILabel+Extension.swift in Sources */,
 				A09B02201C156EDD00B80CBE /* AppDelegate.swift in Sources */,
+				A05C63261C15A16200CE58B3 /* DYTabar.swift in Sources */,
+				A00F57C11C15B5510098047B /* DYVisitorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +469,7 @@
 		};
 		A09B022F1C156EDD00B80CBE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD345E6AB1B31379CB719080 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "weibo-with-swift2/Info.plist";
@@ -348,6 +481,7 @@
 		};
 		A09B02301C156EDD00B80CBE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0503E5F0019A317529ECDA6 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "weibo-with-swift2/Info.plist";
@@ -376,6 +510,7 @@
 				A09B02301C156EDD00B80CBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
