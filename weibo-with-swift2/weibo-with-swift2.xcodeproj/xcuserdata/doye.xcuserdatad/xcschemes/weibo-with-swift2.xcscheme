@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A0574E011C156DA000A3F15C"
+               BlueprintIdentifier = "A09B021B1C156EDD00B80CBE"
                BuildableName = "weibo-with-swift2.app"
                BlueprintName = "weibo-with-swift2"
                ReferencedContainer = "container:weibo-with-swift2.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A0574E011C156DA000A3F15C"
+            BlueprintIdentifier = "A09B021B1C156EDD00B80CBE"
             BuildableName = "weibo-with-swift2.app"
             BlueprintName = "weibo-with-swift2"
             ReferencedContainer = "container:weibo-with-swift2.xcodeproj">
@@ -55,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A0574E011C156DA000A3F15C"
+            BlueprintIdentifier = "A09B021B1C156EDD00B80CBE"
             BuildableName = "weibo-with-swift2.app"
             BlueprintName = "weibo-with-swift2"
             ReferencedContainer = "container:weibo-with-swift2.xcodeproj">
@@ -74,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A0574E011C156DA000A3F15C"
+            BlueprintIdentifier = "A09B021B1C156EDD00B80CBE"
             BuildableName = "weibo-with-swift2.app"
             BlueprintName = "weibo-with-swift2"
             ReferencedContainer = "container:weibo-with-swift2.xcodeproj">
