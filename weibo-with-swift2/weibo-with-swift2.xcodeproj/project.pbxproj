@@ -29,6 +29,7 @@
 		A0E9B8C61C16B70B00012816 /* DYOAuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E9B8C51C16B70B00012816 /* DYOAuthVC.swift */; settings = {ASSET_TAGS = (); }; };
 		A0E9B8C81C16B92600012816 /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E9B8C71C16B92600012816 /* NetworkTools.swift */; settings = {ASSET_TAGS = (); }; };
 		A0E9B8CB1C16CB7800012816 /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E9B8CA1C16CB7800012816 /* UserAccount.swift */; settings = {ASSET_TAGS = (); }; };
+		A0E9B8CE1C16FB0F00012816 /* UserAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E9B8CD1C16FB0F00012816 /* UserAccountViewModel.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		A0E9B8C51C16B70B00012816 /* DYOAuthVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYOAuthVC.swift; sourceTree = "<group>"; };
 		A0E9B8C71C16B92600012816 /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
 		A0E9B8CA1C16CB7800012816 /* UserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccount.swift; sourceTree = "<group>"; };
+		A0E9B8CD1C16FB0F00012816 /* UserAccountViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccountViewModel.swift; sourceTree = "<group>"; };
 		CD345E6AB1B31379CB719080 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D0503E5F0019A317529ECDA6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,6 +138,7 @@
 			children = (
 				A046AC3A1C15D59A009BAF34 /* Tools */,
 				A09B02321C156F8C00B80CBE /* ViewControlers */,
+				A0E9B8CC1C16FAA500012816 /* ViewModel */,
 				A09B02331C156F9300B80CBE /* Model */,
 			);
 			name = Classes;
@@ -230,6 +233,14 @@
 				A0E9B8C51C16B70B00012816 /* DYOAuthVC.swift */,
 			);
 			name = OAuth;
+			sourceTree = "<group>";
+		};
+		A0E9B8CC1C16FAA500012816 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A0E9B8CD1C16FB0F00012816 /* UserAccountViewModel.swift */,
+			);
+			name = ViewModel;
 			sourceTree = "<group>";
 		};
 		E7E78592D8C48FC18B76CF6F /* Frameworks */ = {
@@ -376,6 +387,7 @@
 				A046AC431C15D6CA009BAF34 /* UIBarButtonItem+Extension.swift in Sources */,
 				A09B02431C15768900B80CBE /* MessageTableViewController.swift in Sources */,
 				A09B02221C156EDD00B80CBE /* ViewController.swift in Sources */,
+				A0E9B8CE1C16FB0F00012816 /* UserAccountViewModel.swift in Sources */,
 				A09B02451C15769300B80CBE /* DiscoverTableViewController.swift in Sources */,
 				A046AC411C15D6A8009BAF34 /* UILabel+Extension.swift in Sources */,
 				A09B02201C156EDD00B80CBE /* AppDelegate.swift in Sources */,

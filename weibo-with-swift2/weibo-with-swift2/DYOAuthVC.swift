@@ -60,16 +60,23 @@ extension DYOAuthVC: UIWebViewDelegate {
         
         if let _query = request.URL?.query where _query.hasPrefix("code=") {
             let code = _query.substringFromIndex("code=".endIndex)
-            NetworkTools.sharedTools.loadAccessToken(code, finished: { (result, error) -> () in
+//            NetworkTools.sharedTools.loadAccessToken(code, finished: { (result, error) -> () in
+//                if error != nil {
+//                    SVProgressHUD.showInfoWithStatus("Net Error ")
+//                    return
+//                }
+//                SVProgressHUD.showInfoWithStatus("login success")
+//                print(result)
+            UserAccountViewModel.sharedAccountViewModel.loadAccessToken(code, finished: { (error) -> () in
                 if error != nil {
-                    SVProgressHUD.showInfoWithStatus("Net Error ")
+                    SVProgressHUD.showInfoWithStatus("Net Error")
                     return
                 }
-                SVProgressHUD.showInfoWithStatus("login success")
-                print(result)
-                let account = UserAccount(dict: result as! [String: AnyObject])
-                account.saveUserAccount()
+                SVProgressHUD.showInfoWithStatus("login suceess")
             })
+                
+                // after loadAccessToken it haved stored
+                //let account = UserAccount(dict: result as! [String: AnyObject])
             
         }
         return false

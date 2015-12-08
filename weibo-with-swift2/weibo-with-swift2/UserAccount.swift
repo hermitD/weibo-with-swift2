@@ -8,6 +8,11 @@
 
 import UIKit
 
+//combine two
+//https://api.weibo.com/oauth2/access_token
+//https://api.weibo.com/2/users/show.json
+
+
 class UserAccount: NSObject, NSCoding{
     var access_token: String?
     var expires_in: NSTimeInterval = 0 {
@@ -75,8 +80,6 @@ class UserAccount: NSObject, NSCoding{
     }
     
     func saveUserAccount() {
-//        var path = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0]
-//        path = (path as NSString).stringByAppendingPathExtension("account.plist")!
         NSKeyedArchiver.archiveRootObject(self, toFile: accountPath)
         
     }

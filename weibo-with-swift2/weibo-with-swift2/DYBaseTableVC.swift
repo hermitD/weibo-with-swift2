@@ -37,6 +37,10 @@ class DYBaseTableVC: UITableViewController {
     
     @objc func visitorViewDidLogin() {
         //NSLog("Login")
+        if UserAccountViewModel.sharedAccountViewModel.userAccount != nil {
+            print("Loged: ) ")
+            return
+        }
         let vc = DYOAuthVC()
         let nav = UINavigationController(rootViewController: vc)
         

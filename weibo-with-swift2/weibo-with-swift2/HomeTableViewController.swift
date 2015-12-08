@@ -15,8 +15,8 @@ class HomeTableViewController: DYBaseTableVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var userAccount = UserAccount()
-        userAccount.loadUserAccount()
+        //let useraccountVM = UserAccountViewModel()
+        print(UserAccountViewModel.sharedAccountViewModel.userAccount)
         
         
         if let visterView = visitorView {
