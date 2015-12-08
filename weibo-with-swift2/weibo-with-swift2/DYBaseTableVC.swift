@@ -31,12 +31,17 @@ class DYBaseTableVC: UITableViewController {
         
     }
     
-    func visitorViewDidRegister() {
+    @objc func visitorViewDidRegister() {
         NSLog("Register")
     }
     
-    func visitorViewDidLogin() {
-        NSLog("Login")
+    @objc func visitorViewDidLogin() {
+        //NSLog("Login")
+        let vc = DYOAuthVC()
+        let nav = UINavigationController(rootViewController: vc)
+        
+        presentViewController(nav, animated: true, completion: nil)
+        
     }
     
 }

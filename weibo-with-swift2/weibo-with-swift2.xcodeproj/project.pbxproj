@@ -26,6 +26,9 @@
 		A09B02431C15768900B80CBE /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09B02421C15768900B80CBE /* MessageTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		A09B02451C15769300B80CBE /* DiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09B02441C15769300B80CBE /* DiscoverTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		A09B02471C15769C00B80CBE /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09B02461C15769C00B80CBE /* ProfileTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		A0E9B8C61C16B70B00012816 /* DYOAuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E9B8C51C16B70B00012816 /* DYOAuthVC.swift */; settings = {ASSET_TAGS = (); }; };
+		A0E9B8C81C16B92600012816 /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E9B8C71C16B92600012816 /* NetworkTools.swift */; settings = {ASSET_TAGS = (); }; };
+		A0E9B8CB1C16CB7800012816 /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E9B8CA1C16CB7800012816 /* UserAccount.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +53,9 @@
 		A09B02421C15768900B80CBE /* MessageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewController.swift; sourceTree = "<group>"; };
 		A09B02441C15769300B80CBE /* DiscoverTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewController.swift; sourceTree = "<group>"; };
 		A09B02461C15769C00B80CBE /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		A0E9B8C51C16B70B00012816 /* DYOAuthVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYOAuthVC.swift; sourceTree = "<group>"; };
+		A0E9B8C71C16B92600012816 /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
+		A0E9B8CA1C16CB7800012816 /* UserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccount.swift; sourceTree = "<group>"; };
 		CD345E6AB1B31379CB719080 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D0503E5F0019A317529ECDA6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				A046AC3B1C15D5BE009BAF34 /* Extension */,
+				A0E9B8C71C16B92600012816 /* NetworkTools.swift */,
 			);
 			name = Tools;
 			sourceTree = "<group>";
@@ -141,6 +148,7 @@
 				A09B023C1C1574C300B80CBE /* Discover */,
 				A09B023B1C1574BD00B80CBE /* Message */,
 				A09B023A1C1574AF00B80CBE /* Home */,
+				A0E9B8C91C16BB3300012816 /* OAuth */,
 				A09B02351C15704200B80CBE /* Main */,
 			);
 			name = ViewControlers;
@@ -149,6 +157,7 @@
 		A09B02331C156F9300B80CBE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A0E9B8CA1C16CB7800012816 /* UserAccount.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -213,6 +222,14 @@
 				A05C63251C15A16200CE58B3 /* DYTabar.swift */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		A0E9B8C91C16BB3300012816 /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				A0E9B8C51C16B70B00012816 /* DYOAuthVC.swift */,
+			);
+			name = OAuth;
 			sourceTree = "<group>";
 		};
 		E7E78592D8C48FC18B76CF6F /* Frameworks */ = {
@@ -347,6 +364,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A09B02471C15769C00B80CBE /* ProfileTableViewController.swift in Sources */,
+				A0E9B8C81C16B92600012816 /* NetworkTools.swift in Sources */,
+				A0E9B8CB1C16CB7800012816 /* UserAccount.swift in Sources */,
+				A0E9B8C61C16B70B00012816 /* DYOAuthVC.swift in Sources */,
 				A09B02411C15761100B80CBE /* HomeTableViewController.swift in Sources */,
 				A046AC3F1C15D670009BAF34 /* UIButton+Extension.swift in Sources */,
 				A05C63281C15A6AD00CE58B3 /* DYMainViewController.swift in Sources */,

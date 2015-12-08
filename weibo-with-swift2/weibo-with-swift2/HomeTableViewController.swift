@@ -7,11 +7,17 @@
 //
 
 import UIKit
+import SDWebImage
+
 
 class HomeTableViewController: DYBaseTableVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var userAccount = UserAccount()
+        userAccount.loadUserAccount()
+        
         
         if let visterView = visitorView {
             visterView.setupInfo(nil, title: "hello")
