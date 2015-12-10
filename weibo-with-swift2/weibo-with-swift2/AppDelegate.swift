@@ -12,7 +12,6 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var mainVC: MainViewController?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         setupAppearance()
@@ -20,36 +19,41 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         self.window!.backgroundColor = UIColor.whiteColor()
         
-        let mainVC = MainViewController()
-        self.mainVC = mainVC;
-        self.window!.rootViewController = self.mainVC
-        
+        let mainVC = defaultRootViewController() // to Defalut MainViewController
+        self.window!.rootViewController = mainVC
         self.window!.makeKeyAndVisible()
         
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "switchRootViewController:", name: DYSwitchRootViewControllerNotification, object: nil)
         return true
     }
-
-    func applicationWillResignActive(application: UIApplication) {
-        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-        // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+    
+    deinit {
+        NSNotificationCenter.defaultCenter().removeObserver(self)
     }
-
-    func applicationDidEnterBackground(application: UIApplication) {
-        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    
+    @objc private func switchRootViewController(notification: NSNotification) {
+        let vc = (notification.object == nil) ? MainViewController() : DYWelcomeVC()
+        window?.rootViewController = vc
     }
-
-    func applicationWillEnterForeground(application: UIApplication) {
-        // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    
+    
+    private func defaultRootViewController() ->UIViewController {
+        if UserAccountViewModel.sharedAccountViewModel.userLogon {
+            return isNewVersion() ? DYNewFeatureViewController() : DYWelcomeVC()
+        }
+        return MainViewController()
     }
-
-    func applicationDidBecomeActive(application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    
+    private func isNewVersion() -> Bool {
+        let currentVersion = NSBundle.mainBundle().infoDictionary!["CFBundleShortVersionString"] as! String
+        let version = Double(currentVersion)!
+        let sandBoxVersionKey = "sandBoxVersionKey"
+        let sandBoxVersion = NSUserDefaults.standardUserDefaults().doubleForKey(sandBoxVersionKey)
+        NSUserDefaults.standardUserDefaults().setDouble(version, forKey: sandBoxVersionKey)
+        return version > sandBoxVersion
+        
     }
-
-    func applicationWillTerminate(application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-    }
+    
     private func setupAppearance() {
 
         UINavigationBar.appearance().tintColor = UIColor.orangeColor()
