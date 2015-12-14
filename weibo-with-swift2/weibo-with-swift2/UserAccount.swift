@@ -62,15 +62,6 @@ class UserAccount: NSObject, NSCoding{
     
     
     func loadUserAccount() {
-//        let path = dataFilePath()
-//        if NSFileManager.defaultManager().fileExistsAtPath(path) {
-//            if let data = NSData(contentsOfFile: path) {
-//                let unarchiver = NSKeyedUnarchiver(forReadingWithData: data)
-//                lists = unarchiver.decodeObjectForKey("Checklists") as! [Checklist]
-//                unarchiver.finishDecoding()
-//                sortChecklists()
-//            }
-//        }
         if let unarchiver = NSKeyedUnarchiver.unarchiveObjectWithFile(accountPath) {
             print(unarchiver)
         }else{

@@ -49,20 +49,4 @@ class Status: NSObject {
 
     }
     
-    
-    
 }
-
-
-
-/*
-
-override func setValue(value: AnyObject?, forUndefinedKey key: String) {}
-
-override var description: String {
-let keys = ["id", "created_at", "text", "source", "user", "pic_urls", "retweeted_status"]
-
-return dictionaryWithValuesForKeys(keys).description
-}
-
-*/

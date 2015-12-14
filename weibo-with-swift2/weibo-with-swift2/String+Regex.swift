@@ -10,10 +10,8 @@ import Foundation
 
 extension String {
     
-    /// 从当前字符串中获取链接和文本，`元组`->一个函数返回多个数值
     func href() -> (link: String, text: String)? {
         
-        // 匹配方案 － 过滤的方案
         let pattern = "<a href=\"(.*?)\".*?>(.*?)</a>"
         let regex = try! NSRegularExpression(pattern: pattern, options: [])
         

@@ -33,13 +33,7 @@ class MainViewController: UITabBarController {
         addChildViewController(DiscoverTableViewController(), title: "Discover", image: "tabbar_discover", selectedImage:"tabbar_discover_highlight")
         addChildViewController(ProfileTableViewController(), title: "Profile", image: "tabbar_profile", selectedImage:"tabbar_profile_highlight")
     }
-    /**
-    Description
     
-    - parameter vc:       associate vc
-    - parameter title:    title string
-    - parameter iconName: iconName stirng
-    */
     //FIXED: selcetedImage make no sense? defalut be blue
     // set UITabBar.appearance().tintColor = UIColor.orangeColor() in AppDelegate
     private func addChildViewController(vc: UIViewController, title: String, image: String, selectedImage: String) {

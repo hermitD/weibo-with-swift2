@@ -11,7 +11,7 @@ import Foundation
 class User: NSObject {
     var id: Int = 0
     var screen_name: String?
-    /// 用户头像地址（中图），50×50像素
+    // 50 * 50
     var profile_image_url: String?
     /// 认证类型，-1：没有认证，0，认证用户，2,3,5: 企业认证，220: 达人
     var verified_type: Int = 0

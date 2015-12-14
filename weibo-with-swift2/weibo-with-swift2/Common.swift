@@ -14,3 +14,15 @@ let DYSwitchRootViewControllerNotification = "DYSwitchRootViewControllerNotifica
 
 let DYHomeNormalCellID = "DYHomeNormalCellID"
 let DYHomeRetweetedCellID = "DYHomeRetweetedCellID"
+
+
+/*
+
+TODO
+1. pull down and pull up refresh?
+2. cache the Status
+3. make status text nicer
+4. send status
+5. overwrite the TabbarItem
+6. migration to alamofire
+*/

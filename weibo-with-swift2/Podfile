@@ -4,6 +4,7 @@ use_frameworks!
 
 pod 'Reveal-iOS-SDK', :configurations => ['Debug']
 pod 'AFNetworking'
+pod 'Alamofire', '~> 3.0'
 pod 'SDWebImage'
 pod 'SVProgressHUD'
 pod 'SnapKit'
