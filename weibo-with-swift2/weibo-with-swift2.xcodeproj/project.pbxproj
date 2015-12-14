@@ -30,6 +30,11 @@
 		A05C63281C15A6AD00CE58B3 /* DYMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05C63271C15A6AD00CE58B3 /* DYMainViewController.swift */; };
 		A089871F1C1EB650005E0DE7 /* DYRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A089871D1C1EB650005E0DE7 /* DYRefreshControl.swift */; };
 		A08987221C1EB785005E0DE7 /* DYRefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A08987211C1EB785005E0DE7 /* DYRefreshView.xib */; };
+		A089873B1C1EC935005E0DE7 /* db.sql in Resources */ = {isa = PBXBuildFile; fileRef = A089873A1C1EC935005E0DE7 /* db.sql */; };
+		A089873D1C1EC98D005E0DE7 /* SQLiteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A089873C1C1EC98D005E0DE7 /* SQLiteManager.swift */; };
+		A08987521C1ED8D3005E0DE7 /* StatusDAL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08987511C1ED8D3005E0DE7 /* StatusDAL.swift */; };
+		A08987561C1EDA01005E0DE7 /* FMDatabaseAdditionsVariadic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08987541C1EDA01005E0DE7 /* FMDatabaseAdditionsVariadic.swift */; };
+		A08987571C1EDA01005E0DE7 /* FMDatabaseVariadic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08987551C1EDA01005E0DE7 /* FMDatabaseVariadic.swift */; };
 		A09B02201C156EDD00B80CBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09B021F1C156EDD00B80CBE /* AppDelegate.swift */; };
 		A09B02221C156EDD00B80CBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09B02211C156EDD00B80CBE /* ViewController.swift */; };
 		A09B02251C156EDD00B80CBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A09B02231C156EDD00B80CBE /* Main.storyboard */; };
@@ -73,6 +78,11 @@
 		A05C63271C15A6AD00CE58B3 /* DYMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYMainViewController.swift; sourceTree = "<group>"; };
 		A089871D1C1EB650005E0DE7 /* DYRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYRefreshControl.swift; sourceTree = "<group>"; };
 		A08987211C1EB785005E0DE7 /* DYRefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DYRefreshView.xib; sourceTree = "<group>"; };
+		A089873A1C1EC935005E0DE7 /* db.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = db.sql; sourceTree = "<group>"; };
+		A089873C1C1EC98D005E0DE7 /* SQLiteManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteManager.swift; sourceTree = "<group>"; };
+		A08987511C1ED8D3005E0DE7 /* StatusDAL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusDAL.swift; sourceTree = "<group>"; };
+		A08987541C1EDA01005E0DE7 /* FMDatabaseAdditionsVariadic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMDatabaseAdditionsVariadic.swift; sourceTree = "<group>"; };
+		A08987551C1EDA01005E0DE7 /* FMDatabaseVariadic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMDatabaseVariadic.swift; sourceTree = "<group>"; };
 		A09B021C1C156EDD00B80CBE /* weibo-with-swift2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "weibo-with-swift2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A09B021F1C156EDD00B80CBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A09B02211C156EDD00B80CBE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +145,7 @@
 			children = (
 				A0E9B8C71C16B92600012816 /* NetworkTools.swift */,
 				A0A946701C18236D0065CC5D /* Common.swift */,
+				A089873C1C1EC98D005E0DE7 /* SQLiteManager.swift */,
 			);
 			name = Tools;
 			sourceTree = "<group>";
@@ -142,6 +153,7 @@
 		A046AC3B1C15D5BE009BAF34 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				A08987531C1EDA01005E0DE7 /* Swift extensions */,
 				A046AC3C1C15D626009BAF34 /* UIImage+Extension.swift */,
 				A046AC3E1C15D670009BAF34 /* UIButton+Extension.swift */,
 				A046AC401C15D6A8009BAF34 /* UILabel+Extension.swift */,
@@ -159,6 +171,23 @@
 				A08987211C1EB785005E0DE7 /* DYRefreshView.xib */,
 			);
 			name = Refresh;
+			sourceTree = "<group>";
+		};
+		A08987391C1EC935005E0DE7 /* Resouce */ = {
+			isa = PBXGroup;
+			children = (
+				A089873A1C1EC935005E0DE7 /* db.sql */,
+			);
+			path = Resouce;
+			sourceTree = "<group>";
+		};
+		A08987531C1EDA01005E0DE7 /* Swift extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A08987541C1EDA01005E0DE7 /* FMDatabaseAdditionsVariadic.swift */,
+				A08987551C1EDA01005E0DE7 /* FMDatabaseVariadic.swift */,
+			);
+			path = "Swift extensions";
 			sourceTree = "<group>";
 		};
 		A09B02131C156EDD00B80CBE = {
@@ -184,6 +213,7 @@
 			children = (
 				A09B02311C156F7900B80CBE /* Classes */,
 				A09B021F1C156EDD00B80CBE /* AppDelegate.swift */,
+				A08987391C1EC935005E0DE7 /* Resouce */,
 				A09B02341C15700300B80CBE /* useless */,
 				A09B02261C156EDD00B80CBE /* Assets.xcassets */,
 				A09B022B1C156EDD00B80CBE /* Info.plist */,
@@ -314,6 +344,7 @@
 				A0E9B8CD1C16FB0F00012816 /* UserAccountViewModel.swift */,
 				A03001C31C19996700102DF0 /* StatusViewModel.swift */,
 				A053AE751C1AFB8A00E7F7C3 /* StatusListViewModel.swift */,
+				A08987511C1ED8D3005E0DE7 /* StatusDAL.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -356,6 +387,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = DY;
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = d0ye;
 				TargetAttributes = {
@@ -388,6 +420,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A089873B1C1EC935005E0DE7 /* db.sql in Resources */,
 				A09B022A1C156EDD00B80CBE /* LaunchScreen.storyboard in Resources */,
 				A08987221C1EB785005E0DE7 /* DYRefreshView.xib in Resources */,
 				A09B02271C156EDD00B80CBE /* Assets.xcassets in Resources */,
@@ -461,16 +494,20 @@
 				A0A946711C18236D0065CC5D /* Common.swift in Sources */,
 				A09B02411C15761100B80CBE /* HomeTableViewController.swift in Sources */,
 				A053AE701C1AB90100E7F7C3 /* StatusCellBottomView.swift in Sources */,
+				A089873D1C1EC98D005E0DE7 /* SQLiteManager.swift in Sources */,
 				A046AC3F1C15D670009BAF34 /* UIButton+Extension.swift in Sources */,
 				A05C63281C15A6AD00CE58B3 /* DYMainViewController.swift in Sources */,
+				A08987571C1EDA01005E0DE7 /* FMDatabaseVariadic.swift in Sources */,
 				A03001C91C19A31A00102DF0 /* StatusCell.swift in Sources */,
 				A046AC3D1C15D626009BAF34 /* UIImage+Extension.swift in Sources */,
 				A03001C61C199C7900102DF0 /* NSDate+Extension.swift in Sources */,
 				A053AE761C1AFB8A00E7F7C3 /* StatusListViewModel.swift in Sources */,
 				A03001CB1C19A38300102DF0 /* StatusNormalCell.swift in Sources */,
 				A00F57BF1C15B21D0098047B /* DYBaseTableVC.swift in Sources */,
+				A08987561C1EDA01005E0DE7 /* FMDatabaseAdditionsVariadic.swift in Sources */,
 				A09B02391C15711500B80CBE /* MainViewController.swift in Sources */,
 				A03001CD1C19A3B000102DF0 /* StatusRetweetedCell.swift in Sources */,
+				A08987521C1ED8D3005E0DE7 /* StatusDAL.swift in Sources */,
 				A046AC431C15D6CA009BAF34 /* UIBarButtonItem+Extension.swift in Sources */,
 				A0A9466F1C1817990065CC5D /* DYWelcomeVC.swift in Sources */,
 				A09B02431C15768900B80CBE /* MessageTableViewController.swift in Sources */,
@@ -596,10 +633,15 @@
 			baseConfigurationReference = CD345E6AB1B31379CB719080 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "weibo-with-swift2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				Nothing = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.doyere.weibo-with-swift2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -608,10 +650,14 @@
 			baseConfigurationReference = D0503E5F0019A317529ECDA6 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "weibo-with-swift2/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				Nothing = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.doyere.weibo-with-swift2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};

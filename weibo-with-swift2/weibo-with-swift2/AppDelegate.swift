@@ -27,6 +27,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
+    func applicationDidEnterBackground(application: UIApplication) {
+        StatusDAL.clearCache()
+    }
+    
     deinit {
         NSNotificationCenter.defaultCenter().removeObserver(self)
     }
