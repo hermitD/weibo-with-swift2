@@ -13,7 +13,7 @@ class DYBaseTableVC: UITableViewController {
 //    override func viewDidLoad() {
 //        super.viewDidLoad()
 //    }
-    var isLogin:Bool = false
+    var isLogin:Bool = UserAccountViewModel.sharedAccountViewModel.userLogon
     var visitorView:DYVisitorView?
     
     override func loadView() {

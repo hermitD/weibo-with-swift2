@@ -32,20 +32,13 @@ class DYMainViewController: UITabBarController {
     
     private func setUpTabBar() {
         /*
-        // 自定义tabBar
-        CZTabBar *tabBar = [[CZTabBar alloc] initWithFrame:self.tabBar.bounds];
+        DYTabBar *tabBar = [[DYTabBar alloc] initWithFrame:self.tabBar.bounds];
         tabBar.backgroundColor = [UIColor whiteColor];
-        
-        // 设置代理
         tabBar.delegate = self;
         
-        // 给tabBar传递tabBarItem模型
         tabBar.items = self.items;
-        
-        // 添加自定义tabBar
         [self.tabBar addSubview:tabBar];
         
-        // 移除系统的tabBar
         //[self.tabBar removeFromSuperview];
 
         */
@@ -60,13 +53,7 @@ class DYMainViewController: UITabBarController {
         
         
     }
-    /**
-    Description
-    
-    - parameter vc:       associate vc
-    - parameter title:    title string
-    - parameter iconName: iconName stirng
-    */
+
     //FIXED: selcetedImage make no sense? defalut be blue
     // set UITabBar.appearance().tintColor = UIColor.orangeColor() in AppDelegate
     private func addChildViewController(vc: UIViewController, title: String, image: String, selectedImage: String) {

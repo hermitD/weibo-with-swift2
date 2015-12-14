@@ -20,7 +20,7 @@ class StatusViewModel: CustomStringConvertible {
             cell = StatusNormalCell()
             //normal cell
         }
-        return 1.1
+        return cell.rowHeight(self)
         //return cell.rowHeight(self)
     }()
     

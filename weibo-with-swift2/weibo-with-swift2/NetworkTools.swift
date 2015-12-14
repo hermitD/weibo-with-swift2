@@ -40,6 +40,7 @@ class NetworkTools: AFHTTPSessionManager {
     }
     
     
+    
     var oauthURL: NSURL {
         let urlString = "https://api.weibo.com/oauth2/authorize?client_id=\(appKey)&redirect_uri=\(redirectURL)"
         return NSURL(string: urlString)!
@@ -67,11 +68,28 @@ class NetworkTools: AFHTTPSessionManager {
         request(.POST, urlString: "https://api.weibo.com/oauth2/access_token", parameters: params, finished: finished)
         
     }
+    
+    func loadStatus(since_id: Int, max_id: Int, finished: RequestFinishedCallBack) {
+        guard var params = tokenParams else {
+            finished(result: nil, error: NSError(domain: "cn.doyere.error", code: 404, userInfo: ["message": "token is nil"]))
+            return
+        }
+        
+        if since_id > 0 {
+            params["since_id"] = since_id
+        } else if max_id > 0 {
+            params["max_id"] = max_id - 1
+        }
+        
+        request(.GET, urlString: "https://api.weibo.com/2/statuses/home_timeline.json", parameters: params, finished: finished)
+    }
+    
+    
     //    private func request(method: RequestMethod, urlString: String, parameters: [String: AnyObject]?, finished: RequestFinishedCallBack) {
     // KNOW [String:AnyObject]? --> from the GET( [AnyObject]?)
     private func request(method: RequestMethod, urlString: String, parameters: [String:AnyObject]?, finished: RequestFinishedCallBack) {
         // KNOW closure nesting be logical clear !! closure or block means outside what let inside doing sth. and it could be outside and outsider be sent ...
-        let success = { (task: NSURLSessionDataTask, result: AnyObject) -> () in
+        let success = { (task: NSURLSessionDataTask, result: AnyObject?) -> () in
             finished(result: result, error: nil)
         }
         let failure = { (task: NSURLSessionDataTask?, error: NSError) -> () in
@@ -79,9 +97,12 @@ class NetworkTools: AFHTTPSessionManager {
             finished(result: nil, error: error)
         }
         if method == RequestMethod.GET{
-            GET(urlString, parameters: parameters, success: success, failure: failure )
+            GET(urlString, parameters: parameters, success: success, failure: failure)
+            //GET(urlString, parameters: parameters, success: success, failure: failure )
+            
         }else if(method == RequestMethod.POST){
             POST(urlString, parameters: parameters, success: success, failure: failure)
+            //POST(urlString, parameters: parameters, success: success, failure: failure)
         }else{
             print("wrong request method!!")
         }
