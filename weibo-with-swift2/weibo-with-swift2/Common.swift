@@ -23,6 +23,8 @@ TODO
 2. cache the Status
 3. make status text nicer
 4. send status
+
 5. overwrite the TabbarItem
 6. migration to alamofire
+7. make notice (badgeView) when new statuses 
 */

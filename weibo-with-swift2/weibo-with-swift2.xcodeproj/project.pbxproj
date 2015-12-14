@@ -28,6 +28,8 @@
 		A053AE761C1AFB8A00E7F7C3 /* StatusListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A053AE751C1AFB8A00E7F7C3 /* StatusListViewModel.swift */; };
 		A05C63261C15A16200CE58B3 /* DYTabar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05C63251C15A16200CE58B3 /* DYTabar.swift */; };
 		A05C63281C15A6AD00CE58B3 /* DYMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05C63271C15A6AD00CE58B3 /* DYMainViewController.swift */; };
+		A089871F1C1EB650005E0DE7 /* DYRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A089871D1C1EB650005E0DE7 /* DYRefreshControl.swift */; };
+		A08987221C1EB785005E0DE7 /* DYRefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A08987211C1EB785005E0DE7 /* DYRefreshView.xib */; };
 		A09B02201C156EDD00B80CBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09B021F1C156EDD00B80CBE /* AppDelegate.swift */; };
 		A09B02221C156EDD00B80CBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09B02211C156EDD00B80CBE /* ViewController.swift */; };
 		A09B02251C156EDD00B80CBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A09B02231C156EDD00B80CBE /* Main.storyboard */; };
@@ -69,6 +71,8 @@
 		A053AE751C1AFB8A00E7F7C3 /* StatusListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusListViewModel.swift; sourceTree = "<group>"; };
 		A05C63251C15A16200CE58B3 /* DYTabar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYTabar.swift; sourceTree = "<group>"; };
 		A05C63271C15A6AD00CE58B3 /* DYMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYMainViewController.swift; sourceTree = "<group>"; };
+		A089871D1C1EB650005E0DE7 /* DYRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYRefreshControl.swift; sourceTree = "<group>"; };
+		A08987211C1EB785005E0DE7 /* DYRefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DYRefreshView.xib; sourceTree = "<group>"; };
 		A09B021C1C156EDD00B80CBE /* weibo-with-swift2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "weibo-with-swift2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A09B021F1C156EDD00B80CBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A09B02211C156EDD00B80CBE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -129,7 +133,6 @@
 		A046AC3A1C15D59A009BAF34 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				A046AC3B1C15D5BE009BAF34 /* Extension */,
 				A0E9B8C71C16B92600012816 /* NetworkTools.swift */,
 				A0A946701C18236D0065CC5D /* Common.swift */,
 			);
@@ -147,6 +150,15 @@
 				A03001C51C199C7900102DF0 /* NSDate+Extension.swift */,
 			);
 			name = Extension;
+			sourceTree = "<group>";
+		};
+		A089871C1C1EB54F005E0DE7 /* Refresh */ = {
+			isa = PBXGroup;
+			children = (
+				A089871D1C1EB650005E0DE7 /* DYRefreshControl.swift */,
+				A08987211C1EB785005E0DE7 /* DYRefreshView.xib */,
+			);
+			name = Refresh;
 			sourceTree = "<group>";
 		};
 		A09B02131C156EDD00B80CBE = {
@@ -182,6 +194,7 @@
 		A09B02311C156F7900B80CBE /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A046AC3B1C15D5BE009BAF34 /* Extension */,
 				A046AC3A1C15D59A009BAF34 /* Tools */,
 				A09B02321C156F8C00B80CBE /* ViewControlers */,
 				A0E9B8CC1C16FAA500012816 /* ViewModel */,
@@ -239,6 +252,7 @@
 		A09B023A1C1574AF00B80CBE /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				A089871C1C1EB54F005E0DE7 /* Refresh */,
 				A03001C71C19A30500102DF0 /* StatusCell */,
 				A09B02401C15761100B80CBE /* HomeTableViewController.swift */,
 			);
@@ -375,6 +389,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A09B022A1C156EDD00B80CBE /* LaunchScreen.storyboard in Resources */,
+				A08987221C1EB785005E0DE7 /* DYRefreshView.xib in Resources */,
 				A09B02271C156EDD00B80CBE /* Assets.xcassets in Resources */,
 				A09B02251C156EDD00B80CBE /* Main.storyboard in Resources */,
 			);
@@ -468,6 +483,7 @@
 				A09B02201C156EDD00B80CBE /* AppDelegate.swift in Sources */,
 				A05C63261C15A16200CE58B3 /* DYTabar.swift in Sources */,
 				A0A9466D1C1805C90065CC5D /* DYNewFeatureViewController.swift in Sources */,
+				A089871F1C1EB650005E0DE7 /* DYRefreshControl.swift in Sources */,
 				A00F57C11C15B5510098047B /* DYVisitorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

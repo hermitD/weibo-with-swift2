@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="nG2-km-J2f" customClass="DYRefreshView" customModule="weibo_with_swift2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" fixedFrame="YES" image="tableview_loading" translatesAutoresizingMaskIntoConstraints="NO" id="WwU-9C-oSx">
+                    <rect key="frame" x="0.0" y="14" width="32" height="32"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfJ-l7-Ww6">
+                    <rect key="frame" x="40" y="21" width="97" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TFR-OY-oHN">
+                    <rect key="frame" x="0.0" y="0.0" width="160" height="60"/>
+                    <subviews>
+                        <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" fixedFrame="YES" image="tableview_pull_refresh" translatesAutoresizingMaskIntoConstraints="NO" id="tWp-8N-0PE">
+                            <rect key="frame" x="0.0" y="14" width="32" height="32"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="pull down refreshing..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8rF-VM-y0N">
+                            <rect key="frame" x="40" y="21" width="97" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="loadingIcon" destination="WwU-9C-oSx" id="hqe-Pg-aKH"/>
+                <outlet property="tipIcon" destination="tWp-8N-0PE" id="gxY-W2-wJF"/>
+                <outlet property="tipView" destination="TFR-OY-oHN" id="Lrd-fk-r7t"/>
+            </connections>
+            <point key="canvasLocation" x="492" y="319"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="tableview_loading" width="32" height="32"/>
+        <image name="tableview_pull_refresh" width="32" height="32"/>
+    </resources>
+</document>

@@ -39,6 +39,9 @@ class StatusListViewModel {
             for dict in array {
                 arrayM.append(StatusViewModel(status: Status(dict: dict)))
             }
+            
+            self.pulldownCount = since_id > 0 ? arrayM.count : nil
+            
             if max_id > 0 {
                 self.statuses += arrayM
             }else {
