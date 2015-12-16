@@ -26,8 +26,11 @@
 		A053AE701C1AB90100E7F7C3 /* StatusCellBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A053AE6F1C1AB90100E7F7C3 /* StatusCellBottomView.swift */; };
 		A053AE721C1ABA8800E7F7C3 /* StatusCellPictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A053AE711C1ABA8800E7F7C3 /* StatusCellPictureView.swift */; };
 		A053AE761C1AFB8A00E7F7C3 /* StatusListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A053AE751C1AFB8A00E7F7C3 /* StatusListViewModel.swift */; };
-		A05C63261C15A16200CE58B3 /* DYTabar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05C63251C15A16200CE58B3 /* DYTabar.swift */; };
+		A05C63261C15A16200CE58B3 /* DYTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05C63251C15A16200CE58B3 /* DYTabBar.swift */; };
 		A05C63281C15A6AD00CE58B3 /* DYMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05C63271C15A6AD00CE58B3 /* DYMainViewController.swift */; };
+		A07FBFC81C215DCA00507265 /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07FBFC71C215DCA00507265 /* UIView+Frame.swift */; };
+		A0814BF61C2109DA006FE1F4 /* DYTabbarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0814BF51C2109DA006FE1F4 /* DYTabbarItem.swift */; };
+		A0814BF81C210A0A006FE1F4 /* DYBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0814BF71C210A0A006FE1F4 /* DYBadgeView.swift */; };
 		A089871F1C1EB650005E0DE7 /* DYRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A089871D1C1EB650005E0DE7 /* DYRefreshControl.swift */; };
 		A08987221C1EB785005E0DE7 /* DYRefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A08987211C1EB785005E0DE7 /* DYRefreshView.xib */; };
 		A089873B1C1EC935005E0DE7 /* db.sql in Resources */ = {isa = PBXBuildFile; fileRef = A089873A1C1EC935005E0DE7 /* db.sql */; };
@@ -35,6 +38,7 @@
 		A08987521C1ED8D3005E0DE7 /* StatusDAL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08987511C1ED8D3005E0DE7 /* StatusDAL.swift */; };
 		A08987561C1EDA01005E0DE7 /* FMDatabaseAdditionsVariadic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08987541C1EDA01005E0DE7 /* FMDatabaseAdditionsVariadic.swift */; };
 		A08987571C1EDA01005E0DE7 /* FMDatabaseVariadic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08987551C1EDA01005E0DE7 /* FMDatabaseVariadic.swift */; };
+		A089875A1C1EFB39005E0DE7 /* DYComposeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08987591C1EFB39005E0DE7 /* DYComposeVC.swift */; };
 		A09B02201C156EDD00B80CBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09B021F1C156EDD00B80CBE /* AppDelegate.swift */; };
 		A09B02221C156EDD00B80CBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09B02211C156EDD00B80CBE /* ViewController.swift */; };
 		A09B02251C156EDD00B80CBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A09B02231C156EDD00B80CBE /* Main.storyboard */; };
@@ -74,8 +78,11 @@
 		A053AE6F1C1AB90100E7F7C3 /* StatusCellBottomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusCellBottomView.swift; sourceTree = "<group>"; };
 		A053AE711C1ABA8800E7F7C3 /* StatusCellPictureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusCellPictureView.swift; sourceTree = "<group>"; };
 		A053AE751C1AFB8A00E7F7C3 /* StatusListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusListViewModel.swift; sourceTree = "<group>"; };
-		A05C63251C15A16200CE58B3 /* DYTabar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYTabar.swift; sourceTree = "<group>"; };
+		A05C63251C15A16200CE58B3 /* DYTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYTabBar.swift; sourceTree = "<group>"; };
 		A05C63271C15A6AD00CE58B3 /* DYMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYMainViewController.swift; sourceTree = "<group>"; };
+		A07FBFC71C215DCA00507265 /* UIView+Frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Frame.swift"; sourceTree = "<group>"; };
+		A0814BF51C2109DA006FE1F4 /* DYTabbarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYTabbarItem.swift; sourceTree = "<group>"; };
+		A0814BF71C210A0A006FE1F4 /* DYBadgeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYBadgeView.swift; sourceTree = "<group>"; };
 		A089871D1C1EB650005E0DE7 /* DYRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYRefreshControl.swift; sourceTree = "<group>"; };
 		A08987211C1EB785005E0DE7 /* DYRefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DYRefreshView.xib; sourceTree = "<group>"; };
 		A089873A1C1EC935005E0DE7 /* db.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = db.sql; sourceTree = "<group>"; };
@@ -83,6 +90,7 @@
 		A08987511C1ED8D3005E0DE7 /* StatusDAL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusDAL.swift; sourceTree = "<group>"; };
 		A08987541C1EDA01005E0DE7 /* FMDatabaseAdditionsVariadic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMDatabaseAdditionsVariadic.swift; sourceTree = "<group>"; };
 		A08987551C1EDA01005E0DE7 /* FMDatabaseVariadic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMDatabaseVariadic.swift; sourceTree = "<group>"; };
+		A08987591C1EFB39005E0DE7 /* DYComposeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYComposeVC.swift; sourceTree = "<group>"; };
 		A09B021C1C156EDD00B80CBE /* weibo-with-swift2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "weibo-with-swift2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A09B021F1C156EDD00B80CBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A09B02211C156EDD00B80CBE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +168,7 @@
 				A046AC421C15D6CA009BAF34 /* UIBarButtonItem+Extension.swift */,
 				A03001BF1C1978CB00102DF0 /* String+Regex.swift */,
 				A03001C51C199C7900102DF0 /* NSDate+Extension.swift */,
+				A07FBFC71C215DCA00507265 /* UIView+Frame.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -188,6 +197,14 @@
 				A08987551C1EDA01005E0DE7 /* FMDatabaseVariadic.swift */,
 			);
 			path = "Swift extensions";
+			sourceTree = "<group>";
+		};
+		A08987581C1EFA5A005E0DE7 /* Compose */ = {
+			isa = PBXGroup;
+			children = (
+				A08987591C1EFB39005E0DE7 /* DYComposeVC.swift */,
+			);
+			name = Compose;
 			sourceTree = "<group>";
 		};
 		A09B02131C156EDD00B80CBE = {
@@ -236,6 +253,7 @@
 		A09B02321C156F8C00B80CBE /* ViewControlers */ = {
 			isa = PBXGroup;
 			children = (
+				A08987581C1EFA5A005E0DE7 /* Compose */,
 				A0A9466B1C18057D0065CC5D /* NewFeature */,
 				A09B023D1C1574CC00B80CBE /* Profile */,
 				A09B023C1C1574C300B80CBE /* Discover */,
@@ -316,7 +334,9 @@
 		A09B02481C1588FF00B80CBE /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A05C63251C15A16200CE58B3 /* DYTabar.swift */,
+				A05C63251C15A16200CE58B3 /* DYTabBar.swift */,
+				A0814BF51C2109DA006FE1F4 /* DYTabbarItem.swift */,
+				A0814BF71C210A0A006FE1F4 /* DYBadgeView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -492,10 +512,12 @@
 				A0E9B8CB1C16CB7800012816 /* UserAccount.swift in Sources */,
 				A0E9B8C61C16B70B00012816 /* DYOAuthVC.swift in Sources */,
 				A0A946711C18236D0065CC5D /* Common.swift in Sources */,
+				A0814BF61C2109DA006FE1F4 /* DYTabbarItem.swift in Sources */,
 				A09B02411C15761100B80CBE /* HomeTableViewController.swift in Sources */,
 				A053AE701C1AB90100E7F7C3 /* StatusCellBottomView.swift in Sources */,
 				A089873D1C1EC98D005E0DE7 /* SQLiteManager.swift in Sources */,
 				A046AC3F1C15D670009BAF34 /* UIButton+Extension.swift in Sources */,
+				A07FBFC81C215DCA00507265 /* UIView+Frame.swift in Sources */,
 				A05C63281C15A6AD00CE58B3 /* DYMainViewController.swift in Sources */,
 				A08987571C1EDA01005E0DE7 /* FMDatabaseVariadic.swift in Sources */,
 				A03001C91C19A31A00102DF0 /* StatusCell.swift in Sources */,
@@ -507,18 +529,20 @@
 				A08987561C1EDA01005E0DE7 /* FMDatabaseAdditionsVariadic.swift in Sources */,
 				A09B02391C15711500B80CBE /* MainViewController.swift in Sources */,
 				A03001CD1C19A3B000102DF0 /* StatusRetweetedCell.swift in Sources */,
+				A089875A1C1EFB39005E0DE7 /* DYComposeVC.swift in Sources */,
 				A08987521C1ED8D3005E0DE7 /* StatusDAL.swift in Sources */,
 				A046AC431C15D6CA009BAF34 /* UIBarButtonItem+Extension.swift in Sources */,
 				A0A9466F1C1817990065CC5D /* DYWelcomeVC.swift in Sources */,
 				A09B02431C15768900B80CBE /* MessageTableViewController.swift in Sources */,
 				A09B02221C156EDD00B80CBE /* ViewController.swift in Sources */,
+				A0814BF81C210A0A006FE1F4 /* DYBadgeView.swift in Sources */,
 				A0E9B8CE1C16FB0F00012816 /* UserAccountViewModel.swift in Sources */,
 				A09B02451C15769300B80CBE /* DiscoverTableViewController.swift in Sources */,
 				A03001BE1C1977EF00102DF0 /* Status.swift in Sources */,
 				A053AE6E1C1AB28100E7F7C3 /* StatusCellTopView.swift in Sources */,
 				A046AC411C15D6A8009BAF34 /* UILabel+Extension.swift in Sources */,
 				A09B02201C156EDD00B80CBE /* AppDelegate.swift in Sources */,
-				A05C63261C15A16200CE58B3 /* DYTabar.swift in Sources */,
+				A05C63261C15A16200CE58B3 /* DYTabBar.swift in Sources */,
 				A0A9466D1C1805C90065CC5D /* DYNewFeatureViewController.swift in Sources */,
 				A089871F1C1EB650005E0DE7 /* DYRefreshControl.swift in Sources */,
 				A00F57C11C15B5510098047B /* DYVisitorView.swift in Sources */,

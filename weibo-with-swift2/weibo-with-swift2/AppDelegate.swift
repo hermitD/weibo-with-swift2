@@ -36,7 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     @objc private func switchRootViewController(notification: NSNotification) {
-        let vc = (notification.object == nil) ? MainViewController() : DYWelcomeVC()
+        let vc = (notification.object == nil) ? DYMainViewController() : DYWelcomeVC()
         window?.rootViewController = vc
     }
     

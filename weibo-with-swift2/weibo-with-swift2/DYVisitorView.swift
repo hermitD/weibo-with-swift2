@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 
 
-protocol VisitorViewDelegate {
+protocol VisitorViewDelegate:class {
     
     func visitorViewWillRegisitor()
     func visitorViewWillLogin()
@@ -18,7 +18,7 @@ protocol VisitorViewDelegate {
 
 class DYVisitorView: UIView {
     
-    var delegate:VisitorViewDelegate!
+    weak var delegate: VisitorViewDelegate?
     
     private lazy var iconView: UIImageView = UIImageView(image: UIImage(named: "visitordiscover_feed_image_smallicon"))
     private lazy var maskIconView: UIImageView = UIImageView(image: UIImage(named: "visitordiscover_feed_mask_smallicon"))

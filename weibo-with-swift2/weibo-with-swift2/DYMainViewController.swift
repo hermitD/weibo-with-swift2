@@ -9,7 +9,16 @@
 import UIKit
 
 class DYMainViewController: UITabBarController {
-    var tabBarItems:[UITabBarItem]?
+    
+    //for set badgeVIew
+    weak var homeVC:HomeTableViewController!
+    weak var messageVC:MessageTableViewController!
+    weak var discoverVC:DiscoverTableViewController!
+    weak var profileVC:ProfileTableViewController!
+    
+    
+    
+    var mainTabBarItems:[UITabBarItem] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,9 +27,18 @@ class DYMainViewController: UITabBarController {
         setUpTabBar()
         
     }
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        for tabbarView in self.tabBar.subviews {
+            if tabbarView.isKindOfClass(NSClassFromString("UITabBarButton")!) {
+                tabbarView.removeFromSuperview()
+            }
+        }
+    }
     
     
-    
+
     private func addChildViewControllers() {
         addChildViewController(HomeTableViewController(), title: "Home", image: "tabbar_home", selectedImage:"tabbar_home_highlight")
         addChildViewController(MessageTableViewController(), title: "Message", image: "tabbar_message_center", selectedImage:"tabbar_message_center_highlight")
@@ -31,40 +49,36 @@ class DYMainViewController: UITabBarController {
     
     
     private func setUpTabBar() {
-        /*
-        DYTabBar *tabBar = [[DYTabBar alloc] initWithFrame:self.tabBar.bounds];
-        tabBar.backgroundColor = [UIColor whiteColor];
-        tabBar.delegate = self;
         
-        tabBar.items = self.items;
-        [self.tabBar addSubview:tabBar];
+        let tabBar =  DYTabBar(frame: self.tabBar.frame)
+        tabBar.backgroundColor = UIColor.whiteColor()
         
-        //[self.tabBar removeFromSuperview];
-
-        */
+        tabBar.delegate = self
         
+        tabBar.tabBarItems = self.mainTabBarItems
         
-        let tabBar =  DYTabar(frame: self.tabBar.frame)
-        tabBar.backgroundColor = UIColor.blackColor()
-        
-        tabBar.tabBarItems = self.tabBarItems
         self.tabBar.addSubview(tabBar)
         
         
         
     }
 
-    //FIXED: selcetedImage make no sense? defalut be blue
-    // set UITabBar.appearance().tintColor = UIColor.orangeColor() in AppDelegate
     private func addChildViewController(vc: UIViewController, title: String, image: String, selectedImage: String) {
         vc.title = title
         vc.tabBarItem.image = UIImage(named: image)
         vc.tabBarItem.selectedImage = UIImage(named: selectedImage)
         vc.tabBarItem.badgeValue = "😄"
-        tabBarItems?.append(vc.tabBarItem)
+        mainTabBarItems.append(vc.tabBarItem)
+        
         
         let navVC = UINavigationController(rootViewController: vc)
         self.addChildViewController(navVC)
     }
  
+}
+
+extension DYMainViewController: DYTabbarDelegate {
+    func TabbarItemDidClicked(index:Int){
+        self.selectedIndex = index
+    }
 }

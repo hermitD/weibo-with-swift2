@@ -19,8 +19,8 @@ let DYHomeRetweetedCellID = "DYHomeRetweetedCellID"
 /*
 
 TODO
-1. pull down and pull up refresh?
-2. cache the Status
+1.
+2.
 3. make status text nicer
 4. send status
 
