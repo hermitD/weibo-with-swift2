@@ -40,7 +40,7 @@ class MainViewController: UITabBarController {
         vc.title = title
         vc.tabBarItem.image = UIImage(named: image)
         vc.tabBarItem.selectedImage = UIImage(named: selectedImage)
-        vc.tabBarItem.badgeValue = "😄"
+        vc.tabBarItem.badgeValue = "1" //😄
         
         
         

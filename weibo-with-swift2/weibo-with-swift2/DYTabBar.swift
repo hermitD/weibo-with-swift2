@@ -68,19 +68,23 @@ class DYTabBar: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         let w = self.bounds.size.width
-        let h = self.bounds.size.height
+        
         var btnX:CGFloat = 0
         let btnY:CGFloat = 0
         let tabbarCount = selfTabBarItems.count ?? 0
         let btnW = w / CGFloat(tabbarCount + 1)
+        let btnH = self.bounds.size.height
         
         for (index,tabBarItem) in selfTabBarItems.enumerate() {
             var _index = index
             if index == 2 {
                 _index = 3
+            }else if index == 3 {
+                _index = 4
             }
+            
             btnX = CGFloat(_index) * btnW
-            tabBarItem.frame = CGRectMake(btnX, btnY, w, h)
+            tabBarItem.frame = CGRectMake(btnX, btnY, btnW, btnH)
         }
         
     }

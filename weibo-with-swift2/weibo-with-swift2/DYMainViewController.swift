@@ -50,7 +50,7 @@ class DYMainViewController: UITabBarController {
     
     private func setUpTabBar() {
         
-        let tabBar =  DYTabBar(frame: self.tabBar.frame)
+        let tabBar =  DYTabBar(frame: self.tabBar.bounds)
         tabBar.backgroundColor = UIColor.whiteColor()
         
         tabBar.delegate = self
@@ -67,7 +67,7 @@ class DYMainViewController: UITabBarController {
         vc.title = title
         vc.tabBarItem.image = UIImage(named: image)
         vc.tabBarItem.selectedImage = UIImage(named: selectedImage)
-        vc.tabBarItem.badgeValue = "😄"
+        vc.tabBarItem.badgeValue = "10"//"😄"
         mainTabBarItems.append(vc.tabBarItem)
         
         
