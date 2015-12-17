@@ -6,8 +6,6 @@
 //  Copyright © 2015年 d0ye. All rights reserved.
 //
 
-
-
 import UIKit
 
 //TODO Font all sets to const size? use other tech to change?

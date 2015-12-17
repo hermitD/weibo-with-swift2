@@ -19,8 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         self.window!.backgroundColor = UIColor.whiteColor()
         
-        let mainVC = defaultRootViewController() // to Defalut MainViewController
-        self.window!.rootViewController = mainVC
+//        let mainVC = defaultRootViewController() // to Defalut MainViewController
+//        self.window!.rootViewController = mainVC
+        self.window!.rootViewController = DYMainViewController()
         self.window!.makeKeyAndVisible()
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "switchRootViewController:", name: DYSwitchRootViewControllerNotification, object: nil)

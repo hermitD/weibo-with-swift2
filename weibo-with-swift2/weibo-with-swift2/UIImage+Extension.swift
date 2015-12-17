@@ -26,5 +26,26 @@ extension UIImage {
         UIGraphicsEndImageContext()
         
         return result
+    
     }
+    
+    /*
+    + (instancetype)imageWithStretchableName:(NSString *)imageName
+    {
+    UIImage *image = [UIImage imageNamed:imageName];
+    return [image stretchableImageWithLeftCapWidth:image.size.width * 0.5 topCapHeight:image.size.height * 0.5];
+    }
+    */
+    
+     func stretchHalf() {
+        
+        /*
+        var myImage = UIImage(named: "navbar.png")!
+        let myInsets : UIEdgeInsets = UIEdgeInsetsMake(13, 37, 13, 37)
+        myImage = myImage.resizableImageWithCapInsets(myInsets)
+        */
+        stretchableImageWithLeftCapWidth(Int(self.size.width) / 2, topCapHeight: Int(self.size.height) / 2)
+    }
+    
+    
 }

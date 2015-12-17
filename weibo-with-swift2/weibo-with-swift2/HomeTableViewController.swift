@@ -30,23 +30,44 @@ class HomeTableViewController: DYBaseTableVC {
         
         return indicator
     }()
-
+    
+    var titleButton:DYTitleButton?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //let useraccountVM = UserAccountViewModel()
-        //print(UserAccountViewModel.sharedAccountViewModel.userAccount)
         if !UserAccountViewModel.sharedAccountViewModel.userLogon {
             visitorView?.setupInfo(nil, title: "hello")
             return
         }
+
+        //let useraccountVM = UserAccountViewModel()
+        //print(UserAccountViewModel.sharedAccountViewModel.userAccount)
         
+        setupNavVC()
         prepareaTableView()
         loadData()
         
 //        if let visterView = visitorView {
 //            visterView.setupInfo(nil, title: "hello")
 //        }
+        
+    }
+    
+    private func setupNavVC() {
+        
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(imageName: "navigationbar_friendsearch", highImage: "navigationbar_friendsearch_highlighted", target: self, action: "friendsearch")
+        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(imageName: "navigationbar_pop", highImage: "navigationbar_pop_highlighted", target: self, action: "pop")
+        
+        
+        var titleButton = DYTitleButton()
+        let title = UserAccountViewModel.sharedAccountViewModel.userAccount?.screen_name ?? "Main"
+        titleButton.setTitle(title, forState: .Normal)
+        titleButton.setImage(UIImage(named: "navigationbar_arrow_up"), forState: .Normal)
+        titleButton.setImage(UIImage(named: "navigationbar_arrow_down"), forState: .Selected)
+        titleButton.addTarget(self, action: "titleClick:", forControlEvents: UIControlEvents.TouchUpInside)
+        self.navigationItem.titleView = titleButton
         
     }
     
@@ -63,6 +84,31 @@ class HomeTableViewController: DYBaseTableVC {
         
         //pulldown and up controller
     }
+    
+    @objc private func titleClick(button: UIButton) {
+        button.selected = !button.selected
+        let cover = DYCover.show()
+        cover.delegate = self
+        
+        let popW:CGFloat = 200
+        let popX:CGFloat = (view.width() - 200) * 0.5
+        let popH = popW
+        let popY:CGFloat = 55
+        let menu = DYPopMenu.showInRect(CGRectMake(popX, popY, popW, popH ))
+        menu.contentView = UITableView()
+        
+    }
+    
+    @objc private func friendsearch() {
+        print("friendsearch")
+    }
+    @objc private func pop() {
+        print("pop")
+        let theVC = UITableViewController()
+        self.navigationController?.pushViewController(theVC, animated: true)
+    }
+
+    
     @objc private func loadData() {
         refreshControl?.beginRefreshing()
         
@@ -126,10 +172,17 @@ extension HomeTableViewController {
         }
         return cell
     }
-
-
     
+//    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+//        let theVC = UITableViewController()
+//        self.presentViewController(theVC, animated: true, completion: nil)
+//    }
 
+}
 
-
+extension HomeTableViewController: DYCoverDelegate {
+    func coverdidClicked(cover: DYCover) {
+        DYPopMenu.hide()
+        titleButton?.selected = false
+    }
 }

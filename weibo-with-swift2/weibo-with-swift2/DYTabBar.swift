@@ -37,7 +37,10 @@ class DYTabBar: UIView {
             }
         }
     }
+    //KNOW OPTIONAL [] array needs to init with [],if ? then could not append a value to nil
+
     var selfTabBarItems: [DYTabbarItem] = []
+    
     weak var selectedButton: DYTabbarItem?
     
     weak var delegate: DYTabbarDelegate?
@@ -52,6 +55,7 @@ class DYTabBar: UIView {
         plusBtn.setBackgroundImage(UIImage(named: "tabbar_compose_button_highlighted"), forState: UIControlState.Highlighted)
         //plusBtn.addTarget(self, action: "centerBtnClicked", forControlEvents: UIControlEvents.TouchUpInside)
         plusBtn.sizeToFit()
+        self.addSubview(plusBtn)
         
         return plusBtn
     }()
@@ -60,7 +64,8 @@ class DYTabBar: UIView {
     func btnClick(button: DYTabbarItem) {
         selectedButton?.selected = false
         button.selected = true
-        selectedButton? = button
+        //KNOW OPTIONAL when set value use without !/?
+        selectedButton = button
         delegate?.TabbarItemDidClicked(button.tag)
     }
     
@@ -68,6 +73,7 @@ class DYTabBar: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         let w = self.bounds.size.width
+        let h = self.bounds.size.height
         
         var btnX:CGFloat = 0
         let btnY:CGFloat = 0
@@ -77,14 +83,16 @@ class DYTabBar: UIView {
         
         for (index,tabBarItem) in selfTabBarItems.enumerate() {
             var _index = index
-            if index == 2 {
-                _index = 3
-            }else if index == 3 {
-                _index = 4
+            if index >= 2 {
+                _index = index + 1
             }
+//            }else if index == 3 {
+//                _index = 4
+//            }
             
             btnX = CGFloat(_index) * btnW
             tabBarItem.frame = CGRectMake(btnX, btnY, btnW, btnH)
+            self.plusButton.center = CGPointMake(w * 0.5 , h * 0.5)
         }
         
     }

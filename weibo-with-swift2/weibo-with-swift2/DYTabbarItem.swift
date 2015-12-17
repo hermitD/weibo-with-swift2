@@ -29,6 +29,15 @@ class DYTabbarItem: UIButton {
             
         }
     }
+    
+    override var highlighted: Bool {
+        get {
+            return false
+        }
+        set{
+        }
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
@@ -38,11 +47,14 @@ class DYTabbarItem: UIButton {
         self.titleLabel?.textAlignment = NSTextAlignment.Center
         self.titleLabel?.font = UIFont.systemFontOfSize(12)
         
+        
     }
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
         
     }
+    
+    
     
     override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
         self.setTitle(item.title, forState: UIControlState.Normal)

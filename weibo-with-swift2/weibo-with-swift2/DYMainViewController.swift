@@ -71,7 +71,7 @@ class DYMainViewController: UITabBarController {
         mainTabBarItems.append(vc.tabBarItem)
         
         
-        let navVC = UINavigationController(rootViewController: vc)
+        let navVC = DYNavigationVC(rootViewController: vc)
         self.addChildViewController(navVC)
     }
  
