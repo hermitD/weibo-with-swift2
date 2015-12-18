@@ -97,14 +97,14 @@ class NetworkTools: AFHTTPSessionManager {
             finished(result: nil, error: error)
         }
         if method == RequestMethod.GET{
-            GET(urlString, parameters: parameters, success: success, failure: failure)
-            //GET(urlString, parameters: parameters, success: success, failure: failure )
+            //GET(urlString, parameters: parameters, success: success, failure: failure)
+            GET(urlString, parameters: parameters, progress: nil, success: success, failure: failure)
             
         }else if(method == RequestMethod.POST){
-            POST(urlString, parameters: parameters, success: success, failure: failure)
             //POST(urlString, parameters: parameters, success: success, failure: failure)
-        }else{
-            print("wrong request method!!")
+            POST(urlString, parameters: parameters, progress: nil, success: success, failure: failure)
+                    }else{
+            print("Unhandle request method!!")
         }
 
     }

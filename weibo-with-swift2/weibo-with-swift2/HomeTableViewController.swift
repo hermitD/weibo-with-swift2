@@ -68,6 +68,7 @@ class HomeTableViewController: DYBaseTableVC {
         titleButton.setImage(UIImage(named: "navigationbar_arrow_down"), forState: .Selected)
         titleButton.addTarget(self, action: "titleClick:", forControlEvents: UIControlEvents.TouchUpInside)
         self.navigationItem.titleView = titleButton
+        self.titleButton = titleButton
         
     }
     
@@ -183,6 +184,8 @@ extension HomeTableViewController {
 extension HomeTableViewController: DYCoverDelegate {
     func coverdidClicked(cover: DYCover) {
         DYPopMenu.hide()
-        titleButton?.selected = false
+        if let button = titleButton {
+            button.selected = !button.selected
+        }
     }
 }
