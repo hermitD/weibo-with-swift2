@@ -34,7 +34,7 @@ class SQLiteManager {
         var path = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true).last!
         path = (path as NSString).stringByAppendingPathComponent(dbName)
         
-        print(path)
+        //print(path)
         
         queue = FMDatabaseQueue(path: path)
         

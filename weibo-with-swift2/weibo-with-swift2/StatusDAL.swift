@@ -26,7 +26,7 @@ class StatusDAL {
         
         SQLiteManager.sharedManager.queue.inTransaction { (db, _) -> Void in
             db.executeUpdate(sql, dateStr)
-            print("clear \(db.changes()) rocords")
+            //print("clear \(db.changes()) rocords")
         }
     }
     
@@ -35,7 +35,7 @@ class StatusDAL {
         cacheStats(since_id, max_id: max_id) { (array) -> () in
             
             if array?.count > 0 {
-                print("get \(array?.count) catch record")
+                //print("get \(array?.count) catch record")
                 completion(array: array, error: nil)
                 
                 return
@@ -76,7 +76,7 @@ class StatusDAL {
         }
         sql += "ORDER BY statusId DESC LIMIT 20;"
         
-        print(sql)
+        //print(sql)
         
         SQLiteManager.sharedManager.recordSet(sql) { (array) -> () in
             

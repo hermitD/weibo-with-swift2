@@ -56,7 +56,7 @@ class StatusListViewModel {
             }
             
             let url = vm.thumbnailUrls![0]
-            print("cache 1 pic \(url)")
+            //print("cache 1 pic \(url)")
             
             dispatch_group_enter(group)
             SDWebImageManager.sharedManager().downloadImageWithURL(url, options: [], progress: nil, completed: { (image, _, _, _, _) -> Void in
@@ -71,7 +71,7 @@ class StatusListViewModel {
         }
         
         dispatch_group_notify(group, dispatch_get_main_queue()) { () -> Void in
-            print("cache over \(dataLength / 1024) K")
+            //print("cache over \(dataLength / 1024) K")
             
             finished(error: nil)
         }

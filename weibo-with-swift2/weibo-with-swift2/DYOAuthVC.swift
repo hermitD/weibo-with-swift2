@@ -55,10 +55,17 @@ extension DYOAuthVC: UIWebViewDelegate {
     
     func webView(webView: UIWebView, shouldStartLoadWithRequest request: NSURLRequest, navigationType: UIWebViewNavigationType) -> Bool {
         
-        //not to show the redirectURL
-        if !request.URL!.absoluteString.hasPrefix(NetworkTools.sharedTools.redirectURL) {
+        //not to handle except 4 the redirectURL
+//        if !request.URL!.absoluteString.hasPrefix(NetworkTools.sharedTools.redirectURL) {
+//            //return true
+//            print("same logial1")
+//        }
+        
+        if request.URL?.absoluteString.hasPrefix(NetworkTools.sharedTools.redirectURL) == false {
             return true
         }
+        
+        
         
         if let _query = request.URL?.query where _query.hasPrefix("code=") {
             let code = _query.substringFromIndex("code=".endIndex)

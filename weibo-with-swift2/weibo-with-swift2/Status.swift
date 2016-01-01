@@ -46,7 +46,6 @@ class Status: NSObject {
         let keys = ["id", "created_at", "text", "source", "user", "pic_urls", "retweeted_status"]
         //KNOW KVC
         return dictionaryWithValuesForKeys(keys).description
-
     }
     
 }

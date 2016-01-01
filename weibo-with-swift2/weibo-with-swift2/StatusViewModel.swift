@@ -75,8 +75,6 @@ class StatusViewModel: CustomStringConvertible {
         }
     }
     
-    
-    
     var description: String {
         return status.description + "[pic] \(thumbnailUrls)"
     }

@@ -123,7 +123,7 @@ class HomeTableViewController: DYBaseTableVC {
             }
             
             
-            print("get status!! \(self.listViewModel.statuses.count)")
+           // print("get status!! \(self.listViewModel.statuses.count)")
             self.showPullDownTip()
             
             self.tableView.reloadData()
@@ -133,7 +133,7 @@ class HomeTableViewController: DYBaseTableVC {
     
     private func showPullDownTip() {
         guard let count = listViewModel.pulldownCount else{
-            print("not Pull Down")
+            //print("not Pull Down")
             return
         }
         let title = count == 0 ? "Nothing New" : "get \(count) new status"
