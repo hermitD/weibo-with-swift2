@@ -33,8 +33,8 @@ class DYVisitorView: UIView {
         
         messageLabel.text = title
         
-        if imageName != nil {
-            iconView.image = UIImage(named: imageName!)
+        if let _imageName = imageName {
+            iconView.image = UIImage(named: _imageName)
             homeIconView.hidden = true
             sendSubviewToBack(maskIconView)
         } else {
@@ -54,7 +54,6 @@ class DYVisitorView: UIView {
         iconView.layer.addAnimation(anim, forKey: nil)
     }
     
-
     override init(frame: CGRect) {
         super.init(frame: frame)
         

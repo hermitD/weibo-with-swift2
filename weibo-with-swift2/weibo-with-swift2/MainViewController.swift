@@ -9,11 +9,14 @@
 import UIKit
 
 class MainViewController: UITabBarController {
-
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.blackColor()
         addChildViewControllers()
+        
         
     }
     
@@ -22,12 +25,14 @@ class MainViewController: UITabBarController {
         setCenterButton()
     }
     
+    
+    
     /**
         add a blank vc so not don't need to calculate the frame for others :)
     */
     private func addChildViewControllers() {
         addChildViewController(HomeTableViewController(), title: "Home", image: "tabbar_home", selectedImage:"tabbar_home_highlight")
-        addChildViewController(MessageTableViewController(), title: "Message", image: "tabbar_message_center", selectedImage:"tabbar_message_center_highlight")
+        addChildViewController(WBStatusTimelineViewController(), title: "TimeLine", image: "tabbar_message_center", selectedImage:"tabbar_message_center_highlight")
         addChildViewController(UIViewController())
         
         addChildViewController(DiscoverTableViewController(), title: "Discover", image: "tabbar_discover", selectedImage:"tabbar_discover_highlight")

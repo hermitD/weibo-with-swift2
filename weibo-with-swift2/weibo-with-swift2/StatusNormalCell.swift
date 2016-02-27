@@ -21,6 +21,7 @@ class StatusNormalCell: StatusCell {
         }
     }
     
+    
     override func setupUI() {
         super.setupUI()
         

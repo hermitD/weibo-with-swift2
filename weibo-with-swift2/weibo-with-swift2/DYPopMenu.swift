@@ -51,8 +51,8 @@ class DYPopMenu: UIImageView {
         let y:CGFloat = 9
         let margin:CGFloat = 9
         let x = margin
-        let w:CGFloat = width() - 2 * margin
-        let h:CGFloat = height() - y - margin
+        let w:CGFloat = width - 2 * margin
+        let h:CGFloat = height - y - margin
         
         contentView?.frame = CGRectMake(x, y, w, h)
     }

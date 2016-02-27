@@ -13,11 +13,17 @@ class StatusCellBottomView: UIView {
     private lazy var commentButton: UIButton = UIButton(title: " comment",fontSize: 12,color: UIColor.darkGrayColor(),imageName: "timeline_icon_comment")
     private lazy var likeButton: UIButton = UIButton(title: " Like",fontSize: 12,color: UIColor.darkGrayColor(),imageName: "timeline_icon_unlike")
     
+    
+    class func hello() {
+        print("hello")
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
         setupUI()
     }
+    
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

@@ -101,9 +101,7 @@ class StatusDAL {
         
         assert(UserAccountViewModel.sharedAccountViewModel.userLogon, "user unlogin")
         
-        
         let sql = "INSERT OR REPLACE INTO T_Status (statusId, status, userId) VALUES (?, ?, ?);"
-        
 
         let userId = UserAccountViewModel.sharedAccountViewModel.userAccount!.uid!
         

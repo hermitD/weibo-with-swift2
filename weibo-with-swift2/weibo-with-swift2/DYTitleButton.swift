@@ -13,7 +13,7 @@ class DYTitleButton: UIButton {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setTitleColor(UIColor.blackColor(), forState: .Normal)
-        let backImage = UIImage(named: "navigationbar_filter_background_highlighted")
+        let backImage = UIImage(named: "navigationbar_filter_background_ihghlighted")
         backImage?.stretchHalf()
         setBackgroundImage(backImage, forState: .Highlighted)
     }
@@ -32,7 +32,7 @@ class DYTitleButton: UIButton {
         sizeToFit()
     }
     
-    override func layoutSubviews() {
+    override func layoutSubviews(){
         super.layoutSubviews()
         if currentImage == nil {
             return

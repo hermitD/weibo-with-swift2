@@ -21,7 +21,7 @@ class DYBadgeView: UIButton {
             
             let attrs = [ NSFontAttributeName : UIFont.systemFontOfSize(11)]
             let size = badgeValue.sizeWithAttributes(attrs)
-            if size.width > self.width() {
+            if size.width > self.width {
                 self.setImage(UIImage(named: "new_dot"), forState: .Normal)
                 self.setTitle(nil, forState: .Normal)
                 self.setBackgroundImage(nil, forState: .Normal)

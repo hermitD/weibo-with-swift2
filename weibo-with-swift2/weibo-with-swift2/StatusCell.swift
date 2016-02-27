@@ -32,6 +32,8 @@ class StatusCell: UITableViewCell {
             contentLabel.text = statusText
             
             pictureView.viewModel = viewModel
+            
+            
         }
     }
     private lazy var topView: StatusCellTopView = StatusCellTopView()

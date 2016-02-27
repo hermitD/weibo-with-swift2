@@ -24,18 +24,18 @@ extension UIView {
         return self.frame.origin.y
     }
     
-    func setWidth(width: CGFloat) {
-        self.frame.size.width = width
-    }
-    func width() -> CGFloat {
-        return self.frame.size.width
-    }
-    
-    func setHeight(height: CGFloat) {
-        self.frame.size.height = height
-    }
-    func height() -> CGFloat {
-        return self.frame.size.height
-    }
+//    func setWidth(width: CGFloat) {
+//        self.frame.size.width = width
+//    }
+//    func width() -> CGFloat {
+//        return self.frame.size.width
+//    }
+//    
+//    func setHeight(height: CGFloat) {
+//        self.frame.size.height = height
+//    }
+//    func height() -> CGFloat {
+//        return self.frame.size.height
+//    }
     
 }

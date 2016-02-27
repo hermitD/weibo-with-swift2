@@ -24,15 +24,30 @@ class DYNavigationVC: UINavigationController {
             }
 */
     override class func initialize() {
-        let item = UIBarButtonItem.appearanceWhenContainedInInstancesOfClasses([self])
-        let titleAttr = [NSForegroundColorAttributeName:UIColor.orangeColor()]
-        item.setTitleTextAttributes(titleAttr, forState: .Normal)
+        if #available(iOS 9.0, *) {
+            let item = UIBarButtonItem.appearanceWhenContainedInInstancesOfClasses([self])
+            let titleAttr = [NSForegroundColorAttributeName:UIColor.orangeColor()]
+            item.setTitleTextAttributes(titleAttr, forState: .Normal)
+        } else {
+            // Fallback on earlier versions
+        }
+        
         
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.delegate = self
+        
+        
+        let fpsLabel = YYFPSLabel()
+        fpsLabel.sizeToFit()
+        fpsLabel.bottom = self.view.height - 47
+        fpsLabel.left = 12
+        fpsLabel.alpha = 0
+        
+        fpsLabel.alpha = 1
+        view.addSubview(fpsLabel)
     }
     
     override func pushViewController(viewController: UIViewController, animated: Bool) {

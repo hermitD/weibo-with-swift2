@@ -12,7 +12,7 @@ class DYMainViewController: UITabBarController {
     
     //for set badgeVIew
     weak var homeVC:HomeTableViewController!
-    weak var messageVC:MessageTableViewController!
+    weak var messageVC:WBStatusTimelineViewController!
     weak var discoverVC:DiscoverTableViewController!
     weak var profileVC:ProfileTableViewController!
     
@@ -20,11 +20,13 @@ class DYMainViewController: UITabBarController {
     
     var mainTabBarItems:[UITabBarItem] = []
     
-    override func viewDidLoad() {
+    override func viewDidLoad(){
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.blackColor()
         addChildViewControllers()
         setUpTabBar()
+        self.selectedIndex = 1
+        
         
     }
     override func viewWillAppear(animated: Bool) {
@@ -41,7 +43,7 @@ class DYMainViewController: UITabBarController {
 
     private func addChildViewControllers() {
         addChildViewController(HomeTableViewController(), title: "Home", image: "tabbar_home", selectedImage:"tabbar_home_highlight")
-        addChildViewController(MessageTableViewController(), title: "Message", image: "tabbar_message_center", selectedImage:"tabbar_message_center_highlight")
+        addChildViewController(WBStatusTimelineViewController(), title: "Message", image: "tabbar_message_center", selectedImage:"tabbar_message_center_highlight")
         addChildViewController(DiscoverTableViewController(), title: "Discover", image: "tabbar_discover", selectedImage:"tabbar_discover_highlight")
         addChildViewController(ProfileTableViewController(), title: "Profile", image: "tabbar_profile", selectedImage:"tabbar_profile_highlight")
     }

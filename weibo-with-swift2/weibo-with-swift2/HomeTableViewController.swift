@@ -31,6 +31,8 @@ class HomeTableViewController: DYBaseTableVC {
         return indicator
     }()
     
+   // var fpsLabel = DYFPSLabel()
+    
     var titleButton:DYTitleButton?
     
     override func viewDidLoad() {
@@ -47,6 +49,13 @@ class HomeTableViewController: DYBaseTableVC {
         setupNavVC()
         prepareaTableView()
         loadData()
+
+//        fpsLabel.sizeToFit()
+//        fpsLabel.bottom = self.view.height - 12
+//        fpsLabel.left = 12
+//        fpsLabel.alpha = 0
+//        view.addSubview(fpsLabel)
+        
         
 //        if let visterView = visitorView {
 //            visterView.setupInfo(nil, title: "hello")
@@ -61,7 +70,7 @@ class HomeTableViewController: DYBaseTableVC {
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(imageName: "navigationbar_pop", highImage: "navigationbar_pop_highlighted", target: self, action: "pop")
         
         
-        var titleButton = DYTitleButton()
+        let titleButton = DYTitleButton()
         let title = UserAccountViewModel.sharedAccountViewModel.userAccount?.screen_name ?? "Main"
         titleButton.setTitle(title, forState: .Normal)
         titleButton.setImage(UIImage(named: "navigationbar_arrow_up"), forState: .Normal)
@@ -92,7 +101,7 @@ class HomeTableViewController: DYBaseTableVC {
         cover.delegate = self
         
         let popW:CGFloat = 200
-        let popX:CGFloat = (view.width() - 200) * 0.5
+        let popX:CGFloat = (view.width - 200) * 0.5
         let popH = popW
         let popY:CGFloat = 55
         let menu = DYPopMenu.showInRect(CGRectMake(popX, popY, popW, popH ))
@@ -173,6 +182,8 @@ extension HomeTableViewController {
         }
         return cell
     }
+    
+
     
 //    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
 //        let theVC = UITableViewController()

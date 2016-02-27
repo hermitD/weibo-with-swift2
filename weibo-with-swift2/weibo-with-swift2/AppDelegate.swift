@@ -28,6 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
+
     func applicationDidEnterBackground(application: UIApplication) {
         StatusDAL.clearCache()
     }
