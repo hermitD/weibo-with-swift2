@@ -70,6 +70,7 @@ let kWBLinkURLName: String! = "url"
 let kWBLinkAtName: String! = "at"
 let kWBLinkTagName: String! = "tag"
 
+
 /// 微博布局计算
 public class WBStatusLayout {
     
@@ -924,6 +925,8 @@ public class WBStatusLayout {
         return art
     }
 }
+
+
 
 // 文本中的图片(需要网络下载)
 class WBTextImageViewAttachment: YYTextAttachment {

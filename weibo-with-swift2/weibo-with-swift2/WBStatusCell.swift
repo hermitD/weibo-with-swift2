@@ -62,7 +62,7 @@ class WBStatusView: UIView {
     var toolbarView: WBStatusToolBarView!    // 工具栏
     var vipBackgroundView: UIImageView!      // vip自定义背景
     var menuButton: UIButton!                // 菜单按钮
-    var cell: WBStatusCell!
+    weak var cell: WBStatusCell!
     private var _layout: WBStatusLayout!
     
     override init(frame: CGRect) {
@@ -372,7 +372,7 @@ class WBStatusView: UIView {
 class WBStatusTitleView: UIView {
     var titleLabel: YYLabel!
     var arrowButton: UIButton!
-    var cell: WBStatusCell?
+    weak var cell: WBStatusCell?
     
     override init(frame: CGRect) {
         var newframe = frame
@@ -415,7 +415,7 @@ class WBStatusProfileView: UIView {
     var backgroundImageView: UIImageView?   // vip自定义背景
     var arrowButton: UIButton?              // 菜单按钮
     var followButton: UIButton?             // 关注按钮
-    var cell: WBStatusCell?
+    weak var cell: WBStatusCell?
     
     var verify: WBUserVerifyType {
         get {
@@ -505,7 +505,7 @@ class WBStatusCardView: UIView {
     var badgeImageView: UIImageView?
     var label: YYLabel?
     var button: UIButton?
-    var cell: WBStatusCell?
+    weak var cell: WBStatusCell?
     var _isRetweet: Bool!
     
     override init(frame: CGRect) {
@@ -602,9 +602,14 @@ class WBStatusCardView: UIView {
 
 /// 下方标签
 class WBStatusTagView: UIView {
-    var cell: WBStatusCell?
+    weak var cell: WBStatusCell?
     
 }
+
+class WBPictureView: UIImageView {
+    
+}
+
 
 /// 工具栏
 class WBStatusToolBarView: UIView {
@@ -625,7 +630,7 @@ class WBStatusToolBarView: UIView {
     var topLine: CALayer!
     var bottomLine: CALayer!
     
-    var cell: WBStatusCell?
+    weak var cell: WBStatusCell?
     
     override init(frame: CGRect) {
         var newframe = frame

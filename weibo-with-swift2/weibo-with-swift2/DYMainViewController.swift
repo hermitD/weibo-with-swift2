@@ -25,7 +25,7 @@ class DYMainViewController: UITabBarController {
         self.view.backgroundColor = UIColor.blackColor()
         addChildViewControllers()
         setUpTabBar()
-        self.selectedIndex = 1
+        
         
         
     }
@@ -69,7 +69,7 @@ class DYMainViewController: UITabBarController {
         vc.title = title
         vc.tabBarItem.image = UIImage(named: image)
         vc.tabBarItem.selectedImage = UIImage(named: selectedImage)
-        vc.tabBarItem.badgeValue = "10"//"😄"
+        vc.tabBarItem.badgeValue = "1000"//"😄"
         mainTabBarItems.append(vc.tabBarItem)
         
         

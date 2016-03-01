@@ -32,7 +32,6 @@
 		A053AE761C1AFB8A00E7F7C3 /* StatusListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A053AE751C1AFB8A00E7F7C3 /* StatusListViewModel.swift */; };
 		A05C63261C15A16200CE58B3 /* DYTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05C63251C15A16200CE58B3 /* DYTabBar.swift */; };
 		A05C63281C15A6AD00CE58B3 /* DYMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05C63271C15A6AD00CE58B3 /* DYMainViewController.swift */; };
-		A06190111C7EF7CF00D6CF5A /* WBPictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06190101C7EF7CF00D6CF5A /* WBPictureView.swift */; };
 		A06190131C7EF81400D6CF5A /* WBStatusLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06190121C7EF81400D6CF5A /* WBStatusLayout.swift */; };
 		A06190161C7EF98500D6CF5A /* WBStatusHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06190151C7EF98500D6CF5A /* WBStatusHelper.swift */; };
 		A06190181C7EF9DD00D6CF5A /* WBStatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06190171C7EF9DD00D6CF5A /* WBStatusCell.swift */; };
@@ -113,7 +112,6 @@
 		A053AE751C1AFB8A00E7F7C3 /* StatusListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusListViewModel.swift; sourceTree = "<group>"; };
 		A05C63251C15A16200CE58B3 /* DYTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYTabBar.swift; sourceTree = "<group>"; };
 		A05C63271C15A6AD00CE58B3 /* DYMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYMainViewController.swift; sourceTree = "<group>"; };
-		A06190101C7EF7CF00D6CF5A /* WBPictureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBPictureView.swift; sourceTree = "<group>"; };
 		A06190121C7EF81400D6CF5A /* WBStatusLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBStatusLayout.swift; sourceTree = "<group>"; };
 		A06190151C7EF98500D6CF5A /* WBStatusHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBStatusHelper.swift; sourceTree = "<group>"; };
 		A06190171C7EF9DD00D6CF5A /* WBStatusCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBStatusCell.swift; sourceTree = "<group>"; };
@@ -434,7 +432,6 @@
 			children = (
 				A06190141C7EF97900D6CF5A /* Helper */,
 				A09B02421C15768900B80CBE /* WBStatusTimelineViewController.swift */,
-				A06190101C7EF7CF00D6CF5A /* WBPictureView.swift */,
 				A06190121C7EF81400D6CF5A /* WBStatusLayout.swift */,
 				A06190171C7EF9DD00D6CF5A /* WBStatusCell.swift */,
 			);
@@ -685,7 +682,6 @@
 				A07F7C4B1C56245800705FC1 /* YYFPSLabel.m in Sources */,
 				A0A40B341C7EE550003A5C0F /* WBModel.swift in Sources */,
 				A02B06631C22B42700CB209C /* DYCover.swift in Sources */,
-				A06190111C7EF7CF00D6CF5A /* WBPictureView.swift in Sources */,
 				A03001C61C199C7900102DF0 /* NSDate+Extension.swift in Sources */,
 				A053AE761C1AFB8A00E7F7C3 /* StatusListViewModel.swift in Sources */,
 				A03001CB1C19A38300102DF0 /* StatusNormalCell.swift in Sources */,
